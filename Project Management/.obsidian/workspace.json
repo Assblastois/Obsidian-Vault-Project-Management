@@ -1,0 +1,224 @@
+{
+  "main": {
+    "id": "dfd3a03859aa8dfa",
+    "type": "split",
+    "children": [
+      {
+        "id": "6ec8cb8929702a89",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1c9b8b969c3753b8",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projects/Projects.md",
+                "mode": "preview",
+                "source": false
+              },
+              "pinned": true
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6bb0b208c4148332",
+    "type": "split",
+    "children": [
+      {
+        "id": "98752846110b00ee",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2ba323f5fdb5590b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6f2fb3ebcbd1e154",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": true,
+                "collapseAll": false,
+                "extraContext": true,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b0b34458680cd729",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 265.5
+  },
+  "right": {
+    "id": "f59b74bf5eaba673",
+    "type": "split",
+    "children": [
+      {
+        "id": "3fcdcbcfcccf1c37",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fb713aa590eae28d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Projects/Projects.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e794d0a1b1dc7946",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Projects/Projects.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b927b2a5ce0351fb",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "22e777ccbe7e1432",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "f5d6a6ae52c0ecb7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Projects/Projects.md"
+              }
+            }
+          },
+          {
+            "id": "7d3e34cc8f996a2e",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 290.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "templater-obsidian:Templater": false,
+      "3d-graph-new:Global 3D Graph": false
+    }
+  },
+  "active": "1c9b8b969c3753b8",
+  "lastOpenFiles": [
+    "Background/Templates for quickadd/Project quickadd template.md",
+    "Knowledge/Knowledge.md",
+    "Daily notes/Daily notes.md",
+    "Projects/Projects.md",
+    "Images and documents/Images and documents.md",
+    "obsidian/plugins/templater-obsidian/styles.css",
+    "obsidian/plugins/buttons/styles.css",
+    "obsidian/plugins/folders2graph/manifest.json",
+    "obsidian/plugins/templater-obsidian/manifest.json",
+    "obsidian/plugins/templater-obsidian/data.json",
+    "obsidian/plugins/templater-obsidian/main.js",
+    "obsidian/themes/Simplicity/manifest.json",
+    "obsidian/plugins/url-into-selection/manifest.json",
+    "obsidian/plugins/buttons/manifest.json",
+    "obsidian/plugins/buttons/main.js",
+    "Meetings/Meetings.md",
+    "Coworkers Profiles/Coworkers Profiles.md",
+    "Background/Templates for quickadd/Meeting quickadd template.md",
+    "Background/Templates for quickadd/Daily note quickadd.md",
+    "Background/Templates for quickadd/tomorrows note.md",
+    "Projects/dsfsadf/dsfsadf.md",
+    "Projects/asdfdsaf/asdfdsaf.md",
+    "Background/Templates/New Knowledge Note.md",
+    "Background/Templates/Meeting template.md",
+    "Background/Templates/Daily Note template.md",
+    "Background/Templates/Profile.md",
+    "Background/Templates/Project template.md",
+    "Background/Templatesjs/Templatesjs.md",
+    "Background/Templates for quickadd/Templates for quickadd.md",
+    "Background/Templates/Templates.md",
+    "Background/Background.md",
+    "Coworkers Profiles/Profiles.md",
+    "Funktionierender Code.md",
+    "Knowledge/Liebherr.md",
+    "Daily notes/2024-07-11 No. 1.md",
+    "Daily notes/2024-07-10 No. 1.md",
+    "Images and documents/Pasted image 20240711145527.png",
+    "Images and documents/Pasted image 20240710150655.png",
+    "Images and documents/Pasted image 20240708073343.png",
+    "Images and documents/Pasted image 20240702135707.png",
+    "Images and documents/Pasted image 20240702135347.png",
+    "Images and documents/Pasted image 20240702135230.png",
+    "Images and documents/Pasted image 20240702132847.png",
+    "Images and documents/Pasted image 20240626103630.png",
+    "Images and documents/Pasted image 20240625150113.png",
+    "Images and documents/Pasted image 20240625142747.png",
+    "Untitled.canvas"
+  ]
+}
