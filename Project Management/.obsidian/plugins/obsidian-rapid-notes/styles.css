@@ -1,0 +1,53 @@
+/* Prompt */
+.rapid-notes-modal .prompt-instructions {
+    border-top: 0;
+}
+
+.rapid-notes-modal .prompt-instructions .prompt-instruction-command {
+    color: var(--interactive-accent);
+}
+
+.rapid-notes-modal .prompt-instructions-heading {
+    font-weight: 700;
+}
+
+.is-phone .rapid-notes-modal .prompt-instructions {
+    display: block;
+}
+
+/* Settings */
+.rapid-notes_search {
+    width: 100%;
+}
+
+.rapid-notes-add-prefix-entry .setting-item-control {
+    align-self: flex-start;
+}
+
+.rapid-notes-settings-entry {
+    margin-top: 0!important;
+    padding-top: 0;
+}
+
+@media screen and (min-width: 780px) {
+    .rapid-notes-settings-entry input[type="text"]:first-child {
+        max-width: 60px;
+    }
+    .rapid-notes-settings-entry input[type="text"]:nth-child(2) {
+        max-width: 90px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .rapid-notes-settings-entry .setting-item-control {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .rapid-notes-settings-entry input[type="text"]:first-child,
+    .rapid-notes-settings-entry input[type="text"]:nth-child(2) {
+        flex-grow: 1;
+        flex-basis: 44%;
+        width: 100%;
+    }
+}
