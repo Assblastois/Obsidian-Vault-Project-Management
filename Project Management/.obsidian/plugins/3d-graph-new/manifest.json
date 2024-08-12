@@ -1,0 +1,13 @@
+{
+	"id": "3d-graph-new",
+	"name": "3D Graph New",
+	"version": "1.1.11",
+	"description": "A 3D Graph for Obsidian",
+	"author": "Hananoshika Yomaru",
+	"authorUrl": "https://github.com/HananoshikaYomaru",
+	"fundingUrl": {
+		"buymeacoffee": "https://www.buymeacoffee.com/yomaru",
+		"Github Sponsor": "https://github.com/sponsors/HananoshikaYomaru"
+	},
+	"isDesktopOnly": true
+}
