@@ -1,0 +1,156 @@
+{
+  "userAdmonitions": {
+    "ECN": {
+      "type": "ECN",
+      "color": "117, 63, 198",
+      "icon": {
+        "type": "rpg",
+        "name": "lightning-bolt"
+      },
+      "command": false,
+      "title": "ECN",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "ECT": {
+      "type": "ECT",
+      "color": "224, 91, 251",
+      "icon": {
+        "type": "rpg",
+        "name": "lightning-bolt"
+      },
+      "command": false,
+      "title": "ECT",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "Description": {
+      "type": "Description",
+      "color": "255, 255, 255",
+      "icon": {
+        "type": "obsidian",
+        "name": "lucide-quote"
+      },
+      "command": false,
+      "title": null,
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "relevant": {
+      "type": "relevant",
+      "color": "181, 44, 144",
+      "icon": {
+        "type": "octicons",
+        "name": "file"
+      },
+      "command": false,
+      "title": "Relevant files / Articles",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "Posage": {
+      "type": "Posage",
+      "color": "140, 60, 170",
+      "icon": {
+        "name": "lightning-bolt",
+        "type": "rpg"
+      },
+      "command": false,
+      "title": "N° demande de posage",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "workspace": {
+      "type": "workspace",
+      "color": "180, 54, 196",
+      "icon": {
+        "name": "phoenix-framework",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Workspace",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "Number": {
+      "type": "Number",
+      "color": "157, 77, 255",
+      "icon": {
+        "name": "fire",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "New Number",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    },
+    "new_parts": {
+      "type": "new_parts",
+      "color": "230, 138, 255",
+      "icon": {
+        "name": "gripfire",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "New Parts",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "Workflow": {
+      "type": "Workflow",
+      "color": "223, 112, 245",
+      "icon": {
+        "name": "phoenix-framework",
+        "type": "font-awesome"
+      },
+      "command": false,
+      "title": "Workflow",
+      "injectColor": true,
+      "noTitle": false
+    },
+    "Remarque": {
+      "type": "Remarque",
+      "color": "167, 211, 226",
+      "icon": {
+        "name": "wooden-sign",
+        "type": "rpg"
+      },
+      "command": false,
+      "title": "Remarque",
+      "injectColor": true,
+      "noTitle": false,
+      "copy": true
+    }
+  },
+  "syntaxHighlight": false,
+  "copyButton": true,
+  "version": "10.3.2",
+  "autoCollapse": false,
+  "defaultCollapseType": "open",
+  "injectColor": true,
+  "parseTitles": true,
+  "dropShadow": true,
+  "hideEmpty": false,
+  "open": {
+    "admonitions": true,
+    "icons": true,
+    "other": false,
+    "advanced": false
+  },
+  "icons": [
+    "rpg",
+    "octicons"
+  ],
+  "useFontAwesome": true,
+  "rpgDownloadedOnce": false,
+  "msDocConverted": false,
+  "useSnippet": false,
+  "snippetPath": "custom-admonitions.b9b0e1"
+}

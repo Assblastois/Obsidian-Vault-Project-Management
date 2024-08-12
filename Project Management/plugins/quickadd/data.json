@@ -1,0 +1,471 @@
+{
+  "choices": [
+    {
+      "id": "6afa3111-7b88-4ea7-a58b-33acc631080f",
+      "name": "New Project",
+      "type": "Macro",
+      "command": true,
+      "macroId": "d18e2ec9-4e4b-4da6-a884-252bf24a63cb"
+    },
+    {
+      "id": "93beb6e8-01fd-4591-97c9-2408753262c3",
+      "name": "Meeting",
+      "type": "Macro",
+      "command": true,
+      "macroId": "f6c4cbf8-54d6-48cb-b9c1-964cff123f18"
+    },
+    {
+      "id": "7f28dca5-cdf5-45e9-b5a9-0b9af5c5e77f",
+      "name": "daily note",
+      "type": "Multi",
+      "command": true,
+      "choices": [
+        {
+          "id": "4c087ce8-b8d4-4ad1-a080-237f9f7d3036",
+          "name": "Today",
+          "type": "Macro",
+          "command": true,
+          "macroId": "1a9ecaa8-b6e3-4aee-9775-72d7711914ba"
+        },
+        {
+          "id": "44aa5647-6047-4f26-a9ed-f4812ce0266b",
+          "name": "Tomorrow",
+          "type": "Macro",
+          "command": true,
+          "macroId": "50d8d22e-a980-4928-99e2-c32de9c91e62"
+        }
+      ],
+      "collapsed": false
+    }
+  ],
+  "macros": [
+    {
+      "name": "Meeting",
+      "id": "f6c4cbf8-54d6-48cb-b9c1-964cff123f18",
+      "commands": [
+        {
+          "name": "Meeting",
+          "type": "NestedChoice",
+          "id": "f3ef608e-0537-4138-822d-9510160205b2",
+          "choice": {
+            "id": "a03a2cb4-60c4-480b-9763-c9f9079885f5",
+            "name": "Meeting",
+            "type": "Template",
+            "command": false,
+            "templatePath": "Background/Templates for quickadd/Meeting quickadd template.md",
+            "fileNameFormat": {
+              "enabled": true,
+              "format": "Meeting {{date}}  No. 1"
+            },
+            "folder": {
+              "enabled": true,
+              "folders": [],
+              "chooseWhenCreatingNote": false,
+              "createInSameFolderAsActiveFile": true,
+              "chooseFromSubfolders": false
+            },
+            "appendLink": false,
+            "openFileInNewTab": {
+              "enabled": true,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": true,
+            "openFileInMode": "default",
+            "fileExistsMode": "Increment the file name",
+            "setFileExistsBehavior": true
+          }
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "d6135342-7720-4711-ae0d-e62494bb94ba",
+          "time": 100
+        },
+        {
+          "name": "Mover",
+          "type": "NestedChoice",
+          "id": "b8af2e8e-4fec-4361-ad1d-55dc50057cfb",
+          "choice": {
+            "id": "7f29780b-0302-4efa-b498-ab07f42bc502",
+            "name": "Mover",
+            "type": "Capture",
+            "command": false,
+            "appendLink": false,
+            "captureTo": "",
+            "captureToActiveFile": true,
+            "createFileIfItDoesntExist": {
+              "enabled": false,
+              "createWithTemplate": false,
+              "template": ""
+            },
+            "format": {
+              "enabled": true,
+              "format": "<% await tp.file.move(\"/Meetings/\" + tp.file.title) %>"
+            },
+            "insertAfter": {
+              "enabled": false,
+              "after": "",
+              "insertAtEnd": false,
+              "considerSubsections": false,
+              "createIfNotFound": false,
+              "createIfNotFoundLocation": "top"
+            },
+            "prepend": true,
+            "task": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": false,
+            "openFileInMode": "default"
+          }
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "b7503bf3-2b69-4abe-a0e8-dfb093a336ee",
+          "time": 100
+        },
+        {
+          "name": "Templater: Replace templates in the active file",
+          "type": "Obsidian",
+          "id": "e318faf3-1e76-497f-ac27-f29497ebcdff",
+          "commandId": "templater-obsidian:replace-in-file-templater"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "New Project",
+      "id": "d18e2ec9-4e4b-4da6-a884-252bf24a63cb",
+      "commands": [
+        {
+          "name": "New Project",
+          "type": "NestedChoice",
+          "id": "0fa51982-dd3f-45dd-945e-47045a5f2732",
+          "choice": {
+            "id": "6de3541e-9851-41f4-95ed-3d4b7ed52e22",
+            "name": "New Project",
+            "type": "Template",
+            "command": false,
+            "templatePath": "Background/Templates for quickadd/Project quickadd template.md",
+            "fileNameFormat": {
+              "enabled": false,
+              "format": ""
+            },
+            "folder": {
+              "enabled": true,
+              "folders": [],
+              "chooseWhenCreatingNote": false,
+              "createInSameFolderAsActiveFile": true,
+              "chooseFromSubfolders": false
+            },
+            "appendLink": false,
+            "openFileInNewTab": {
+              "enabled": true,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": true,
+            "openFileInMode": "default",
+            "fileExistsMode": "Increment the file name",
+            "setFileExistsBehavior": false
+          }
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "8e384bfa-e38e-4367-b16b-0679881aeba6",
+          "time": 100
+        },
+        {
+          "name": "Templater: Replace templates in the active file",
+          "type": "Obsidian",
+          "id": "f8c9a001-ca44-4ed6-be80-60e7b46ab435",
+          "commandId": "templater-obsidian:replace-in-file-templater"
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "0259f24e-5adf-4dc3-b89f-528860b83200",
+          "time": 100
+        },
+        {
+          "name": "Natural Language Dates: Date picker",
+          "type": "Obsidian",
+          "id": "acac2fd8-b6b8-421a-985a-cceacdee8032",
+          "commandId": "nldates-obsidian:nlp-picker"
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "0a9ae2b7-524f-465a-b256-7f9cdcb8bbbb",
+          "time": 100
+        },
+        {
+          "name": "Folder notes: Create folder note with a new folder for the active note in the current folder",
+          "type": "Obsidian",
+          "id": "09c820f3-2311-4ee8-a891-b84f5fbfd7d6",
+          "commandId": "folder-notes:create-folder-note"
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "70842925-ce6c-4817-82da-65111e82b3d5",
+          "time": 100
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Tomorrow",
+      "id": "50d8d22e-a980-4928-99e2-c32de9c91e62",
+      "commands": [
+        {
+          "name": "Untitled Template Choice",
+          "type": "NestedChoice",
+          "id": "ed8e9dda-6f4b-418b-b74d-34bbfc0ad457",
+          "choice": {
+            "id": "785db6a4-81ac-4fe3-9ab2-d8c59a9335a1",
+            "name": "Untitled Template Choice",
+            "type": "Template",
+            "command": false,
+            "templatePath": "Background/Templates for quickadd/tomorrows note.md",
+            "fileNameFormat": {
+              "enabled": true,
+              "format": "{{date}} No. 1"
+            },
+            "folder": {
+              "enabled": true,
+              "folders": [],
+              "chooseWhenCreatingNote": false,
+              "createInSameFolderAsActiveFile": true,
+              "chooseFromSubfolders": false
+            },
+            "appendLink": false,
+            "openFileInNewTab": {
+              "enabled": true,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": true,
+            "openFileInMode": "default",
+            "fileExistsMode": "Increment the file name",
+            "setFileExistsBehavior": false
+          }
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "5820b34f-ae20-4071-aab1-8aceba993959",
+          "time": 100
+        },
+        {
+          "name": "Mover",
+          "type": "NestedChoice",
+          "id": "2c496904-d95b-4a41-a01e-c7daabc4fe8e",
+          "choice": {
+            "id": "61d961cc-963b-48a7-aff0-dfde0a6a2012",
+            "name": "Mover",
+            "type": "Capture",
+            "command": false,
+            "appendLink": false,
+            "captureTo": "",
+            "captureToActiveFile": true,
+            "createFileIfItDoesntExist": {
+              "enabled": false,
+              "createWithTemplate": false,
+              "template": ""
+            },
+            "format": {
+              "enabled": true,
+              "format": "<% await tp.file.move(\"/Daily notes/\" + tp.file.title) %>"
+            },
+            "insertAfter": {
+              "enabled": false,
+              "after": "",
+              "insertAtEnd": false,
+              "considerSubsections": false,
+              "createIfNotFound": false,
+              "createIfNotFoundLocation": "top"
+            },
+            "prepend": true,
+            "task": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": false,
+            "openFileInMode": "default"
+          }
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "0a0df496-2456-4557-87f4-84a75899ed37",
+          "time": 100
+        },
+        {
+          "name": "Templater: Replace templates in the active file",
+          "type": "Obsidian",
+          "id": "a384995b-3ebe-44c4-8963-468fea7405a6",
+          "commandId": "templater-obsidian:replace-in-file-templater"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Today",
+      "id": "1a9ecaa8-b6e3-4aee-9775-72d7711914ba",
+      "commands": [
+        {
+          "name": "today",
+          "type": "NestedChoice",
+          "id": "660b095e-dabe-4881-aec6-efd0d6cdaaea",
+          "choice": {
+            "id": "71c3eb9c-8a3c-41a4-a9e0-e753546ca8f6",
+            "name": "today",
+            "type": "Template",
+            "command": false,
+            "templatePath": "Background/Templates for quickadd/Daily note quickadd.md",
+            "fileNameFormat": {
+              "enabled": true,
+              "format": "{{date}} No. 1"
+            },
+            "folder": {
+              "enabled": true,
+              "folders": [],
+              "chooseWhenCreatingNote": false,
+              "createInSameFolderAsActiveFile": true,
+              "chooseFromSubfolders": false
+            },
+            "appendLink": false,
+            "openFileInNewTab": {
+              "enabled": true,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": true,
+            "openFileInMode": "default",
+            "fileExistsMode": "Increment the file name",
+            "setFileExistsBehavior": false
+          }
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "86d61899-a4b4-45ac-bea6-1dad486cf04d",
+          "time": 100
+        },
+        {
+          "name": "mover",
+          "type": "NestedChoice",
+          "id": "cc6033db-08e8-4cdc-b029-dd6e165a590c",
+          "choice": {
+            "id": "d7e8952a-77f6-4a0e-811b-62de24ae4a63",
+            "name": "mover",
+            "type": "Capture",
+            "command": false,
+            "appendLink": false,
+            "captureTo": "",
+            "captureToActiveFile": true,
+            "createFileIfItDoesntExist": {
+              "enabled": false,
+              "createWithTemplate": false,
+              "template": ""
+            },
+            "format": {
+              "enabled": true,
+              "format": "<% await tp.file.move(\"/Daily notes/\" + tp.file.title) %>"
+            },
+            "insertAfter": {
+              "enabled": false,
+              "after": "",
+              "insertAtEnd": false,
+              "considerSubsections": false,
+              "createIfNotFound": false,
+              "createIfNotFoundLocation": "top"
+            },
+            "prepend": true,
+            "task": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": false,
+            "openFileInMode": "default"
+          }
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "fa2b9d81-5faf-4530-a3b4-8f1bc51f5133",
+          "time": 100
+        }
+      ],
+      "runOnStartup": false
+    }
+  ],
+  "inputPrompt": "single-line",
+  "devMode": false,
+  "templateFolderPath": "Background/Templates for quickadd",
+  "announceUpdates": true,
+  "version": "1.10.0",
+  "disableOnlineFeatures": true,
+  "enableRibbonIcon": false,
+  "ai": {
+    "defaultModel": "Ask me",
+    "defaultSystemPrompt": "As an AI assistant within Obsidian, your primary goal is to help users manage their ideas and knowledge more effectively. Format your responses using Markdown syntax. Please use the [[Obsidian]] link format. You can write aliases for the links by writing [[Obsidian|the alias after the pipe symbol]]. To use mathematical notation, use LaTeX syntax. LaTeX syntax for larger equations should be on separate lines, surrounded with double dollar signs ($$). You can also inline math expressions by wrapping it in $ symbols. For example, use $$w_{ij}^{\text{new}}:=w_{ij}^{\text{current}}+etacdotdelta_jcdot x_{ij}$$ on a separate line, but you can write \"($eta$ = learning rate, $delta_j$ = error term, $x_{ij}$ = input)\" inline.",
+    "promptTemplatesFolderPath": "",
+    "showAssistant": true,
+    "providers": [
+      {
+        "name": "OpenAI",
+        "endpoint": "https://api.openai.com/v1",
+        "apiKey": "",
+        "models": [
+          {
+            "name": "gpt-3.5-turbo",
+            "maxTokens": 4096
+          },
+          {
+            "name": "gpt-3.5-turbo-16k",
+            "maxTokens": 16384
+          },
+          {
+            "name": "gpt-3.5-turbo-1106",
+            "maxTokens": 16385
+          },
+          {
+            "name": "gpt-4",
+            "maxTokens": 8192
+          },
+          {
+            "name": "gpt-4-32k",
+            "maxTokens": 32768
+          },
+          {
+            "name": "gpt-4-1106-preview",
+            "maxTokens": 128000
+          },
+          {
+            "name": "text-davinci-003",
+            "maxTokens": 4096
+          }
+        ]
+      }
+    ]
+  },
+  "migrations": {
+    "migrateToMacroIDFromEmbeddedMacro": true,
+    "useQuickAddTemplateFolder": true,
+    "incrementFileNameSettingMoveToDefaultBehavior": true,
+    "mutualExclusionInsertAfterAndWriteToBottomOfFile": true,
+    "setVersionAfterUpdateModalRelease": true,
+    "addDefaultAIProviders": true
+  }
+}

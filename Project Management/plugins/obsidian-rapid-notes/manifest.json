@@ -1,0 +1,10 @@
+{
+	"id": "obsidian-rapid-notes",
+	"name": "Rapid Notes",
+	"version": "1.2.5",
+	"minAppVersion": "0.15.0",
+	"description": "Create and place notes quickly in specific folders based on predefined prefixes.",
+	"author": "valteriomon",
+	"authorUrl": "https://github.com/valteriomon",
+	"isDesktopOnly": false
+}
