@@ -1,0 +1,72 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": false,
+  "showAttachments": true,
+  "hideUnresolved": true,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:Background  ",
+      "color": {
+        "a": 1,
+        "rgb": 65471
+      }
+    },
+    {
+      "query": "[\"type\":Project",
+      "color": {
+        "a": 1,
+        "rgb": 16711680
+      }
+    },
+    {
+      "query": "path:\"Daily notes\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 6490120
+      }
+    },
+    {
+      "query": "[\"level\":Sub1",
+      "color": {
+        "a": 1,
+        "rgb": 16771584
+      }
+    },
+    {
+      "query": "path:Profiles/Diesel  ",
+      "color": {
+        "a": 1,
+        "rgb": 9175295
+      }
+    },
+    {
+      "query": "path:Profiles/CRS  ",
+      "color": {
+        "a": 1,
+        "rgb": 10107370
+      }
+    },
+    {
+      "query": "path:Liebherr  ",
+      "color": {
+        "a": 1,
+        "rgb": 13415183
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": -0.7,
+  "nodeSizeMultiplier": 0.776302083333333,
+  "lineSizeMultiplier": 1.4015625,
+  "collapse-forces": false,
+  "centerStrength": 0.538461538461538,
+  "repelStrength": 8.57142857142857,
+  "linkStrength": 0.686813186813187,
+  "linkDistance": 159,
+  "scale": 0.2292013594175087,
+  "close": true
+}
