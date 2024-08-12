@@ -1,0 +1,11 @@
+{
+	"id": "folders2graph",
+	"name": "Folders to Graph",
+	"description": "Display your vault folder structure into your graphs.",
+	"version": "1.0.0",
+	"author": "ratibus11",
+	"authorUrl": "https://github.com/ratibus11",
+	"fundingUrl": "https://paypal.me/bastianlucas",
+	"minAppVersion": "1.4.16",
+	"isDesktopOnly": false
+}
