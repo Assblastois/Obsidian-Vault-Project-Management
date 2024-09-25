@@ -50,6 +50,7 @@ I have also added two CSS-Snippets that allow you to float images, either to the
 ### Misc:
 - If you feel that the project-page is done, you can change the Property obsidianUIMode from empty to preview. This will force this note (and only this note) into reading mode, making the layout nicer. 
 - If you use tables, change the theme.
-- If the Dataview blocks and/or quoteblocks don't render properly try to close Obsidian and reopen. If this doesn't help switch from reading mode to editing mode. I have know idea why this happens. 
+- If the Dataview blocks and/or quoteblocks don't render properly try to close Obsidian and reopen. If this doesn't help switch from reading mode to editing mode. I have know idea why this happens.
+- Use the command "File Hider: Toggle Visibility" to either show or hide the daily notes, meetings, background and images folder.
 
 
