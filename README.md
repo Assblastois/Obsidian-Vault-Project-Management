@@ -44,6 +44,7 @@ The base image that is associated with each project is placeholder.jpg and is li
 **If you don't want any image you must delete the property and delete `embed(link(meta(CoverImg).path, "125")) as "Image"` from the Dataview table. If you just delete the image the whole project will not be displayed in the Dataview table!**
 
 I have also added two CSS-Snippets that allow you to float images, either to the left or right. `![[Pasted image 20240925082325.png|left|150]]` You can change the size by holding alt and scolling! 
+
 ![image](https://github.com/user-attachments/assets/3a402e8b-a509-40e5-ac64-d441b218363e)
 
 ### Misc:
