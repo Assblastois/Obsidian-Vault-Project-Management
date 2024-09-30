@@ -32,7 +32,7 @@ Group by file.name
 ```dataviewjs
 const notes = await dv.query (`
 TABLE 
-  R.file.link as Project, R.QuickFind as QuickFind, R.Arbeitsstunden as Arbeitsstunden
+  R.file.link as Project, R.QuickFind as QuickFind, R.Hours as Hours
 FROM
   [[]]
 GROUP BY
