@@ -1,0 +1,16 @@
+.workspace-tab-header:has(.mod-pinned) {
+  /* shrink if pinned, to the size of an emoji */
+  max-width: 47px !important;
+
+  & .workspace-tab-header-inner-title {
+    /* hide the title of pinned tabs (optional) */
+    /* display: none; !important*/
+
+    /* hide ellipsis character */
+    text-overflow: clip !important;
+  }
+  /* hide pin icon */
+  & .workspace-tab-header-status-container {
+    display: none !important;
+  }
+}
