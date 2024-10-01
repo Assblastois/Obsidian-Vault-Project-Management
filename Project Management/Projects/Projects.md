@@ -37,7 +37,7 @@ FLATTEN list(filter(AllProjectTasks, (task) => !task.completed)) as OpenTasks
 TABLE  
 OpenTasks.text as "Waiting for:", 
 Urgency as Urgency, 
-DueDate as "Due Date fin. const."
+DueDate as "Date"
 
 FROM "Projects"
 
