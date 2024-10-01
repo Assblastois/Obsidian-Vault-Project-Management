@@ -34,12 +34,20 @@ FLATTEN list(filter(AllProjectTasks, (task) => !task.completed)) as OpenTasks
 
 #### <font color="orange"> Limbo </font>
 ```dataview
-TABLE WITHOUT ID
-file.link as Project, Urgency, DueDate, Responsible + "<br>" +  Department as Responsible
+TABLE  
+OpenTasks.text as "Waiting for:", 
+Urgency as Urgency, 
+DueDate as "Due Date fin. const."
+
 FROM "Projects"
-WHERE Type = "Project" 
-Where Limbo = True and Completed = False
+
+WHERE file != this.file
+WHERE Completed = False and Limbo = True 
+
+FLATTEN list(flat(file.inlinks.file.tasks)) as AllProjectTasks
+FLATTEN list(filter(AllProjectTasks, (task) => !task.completed)) as OpenTasks
 ```
+
 
 <BR>
 
