@@ -11,7 +11,7 @@ Link to my Obsidian Forum post: https://forum.obsidian.md/t/my-project-managemen
 
 2. Extract the files to where you want to store them.
 
-3. Go to the vault menu and chose “Open folder as vault”, select the folder you extracted and trust the plugins.
+3. Go to the vault menu and chose “Open folder as vault”, select the folder ("Project Management") you extracted and trust the plugins.
 
 You should now have full access to the vault. If the dataview blocks don’t render correctly, close Obsidian and reopen.
 
